@@ -6,10 +6,7 @@ using System.Threading.Tasks;
 
 namespace Ejercicio_3
 {
-    internal class Program
+    internal class Logic
     {
-        static void Main(string[] args)
-        {
-        }
     }
 }
