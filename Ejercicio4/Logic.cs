@@ -4,13 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Ejercicio_3
+namespace Ejercicio4
 {
     public class Logic 
     {
-        public static Exception DispararExcepcion()
-        {    
-            throw new ArgumentNullException();
+        public static void ThrowExceptionsCustom(string message)
+        {
+            throw new ExceptionCustom(message);
         }
     }
 }
