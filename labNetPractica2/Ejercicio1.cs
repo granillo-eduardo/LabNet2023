@@ -21,32 +21,6 @@ namespace Ejercicio1
 
             Console.ReadKey();
         }
-        #region 
-        //public static void ThrowExceptions(int valor)
-        //{
-        //    try
-        //    {
-        //        int resultado;
-        //        Console.WriteLine($"\n {valor} / 0 = ");
-        //        resultado = valor / 0;
-
-        //        //Console.WriteLine($"\n {valor} / 0 = {resultado}");
-        //    }
-
-        //    catch (Exception ex)
-        //    {
-        //        Console.WriteLine("\n " + ex.Message);
-        //        //throw ex.Message;
-        //    }
-
-        //    finally
-        //    {
-        //        Console.WriteLine("\n Finalizo la operación");
-        //    }
-
-        //    Console.ReadKey();
-        //}
-        #endregion
         
     }
 }
