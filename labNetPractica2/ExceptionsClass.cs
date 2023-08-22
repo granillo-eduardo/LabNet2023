@@ -48,24 +48,10 @@ namespace lanNetPractica2
                 Console.WriteLine("\n “¡Solo Chuck Norris divide por cero!” ");
             }
             catch (Exception ex)
-            {
-                //Console.WriteLine($"Secapturo {ex.Message}");
-                //Console.WriteLine(Environment.NewLine);
+            {   
                 Console.WriteLine($"Stack {ex.StackTrace}");
             }
-            #region MyRegion
-            //catch (FormatException ex)
-            //{
-            //    Console.WriteLine($"\n “¡Seguro Ingreso una letra o no ingreso nada!”. \n {ex.Message}");
-            //}
-
-            //catch (Exception ex)
-            //{
-            //    //excepcion propia
-            //    Console.WriteLine("\n " + ex.Message);               
-            //}
-            #endregion
-
+            
             finally
             {
                 Console.WriteLine("\n Finalizo la operación");

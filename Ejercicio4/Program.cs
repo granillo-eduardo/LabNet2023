@@ -13,12 +13,12 @@ namespace Ejercicio4
         {
             try
             {
-                Logic.ThrowExceptionsCustom("mensaje propio");
+                Logic.ThrowExceptionsCustom("Mensaje de Excepcion propia");
             }
             catch (Exception ex)
             {
-                Console.WriteLine($"Se caputuro la exception : '{ex.Message}'");
-                Console.WriteLine(ex.GetType().Name);
+                Console.WriteLine($" Se caputuro la exception : '{ex.Message}' ");
+                Console.WriteLine($"\n Excepcion de tipo: {ex.GetType().Name}");
             }
 
             Console.ReadKey();

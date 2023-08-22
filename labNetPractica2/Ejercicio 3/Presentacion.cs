@@ -19,8 +19,8 @@ namespace Ejercicio_3
             }
             catch (Exception ex)
             {
-                Console.WriteLine($"Se caputuro la exception : '{ex.Message}'");
-                Console.WriteLine(ex.GetType().Name);   
+                Console.WriteLine($"\n Se caputuro la exception : '{ex.Message}'");
+                Console.WriteLine($"\n La excepcion es del tipo: {ex.GetType().Name}");   
             }
             
             Console.ReadKey();  
