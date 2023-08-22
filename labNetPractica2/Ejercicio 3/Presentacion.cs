@@ -1,4 +1,5 @@
-﻿using System;
+﻿using lanNetPractica2;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Security.Cryptography.X509Certificates;
@@ -11,7 +12,20 @@ namespace Ejercicio_3
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("sol");
+            try
+            {
+                ExceptionsClass.ThrowCustomExeption();
+            }
+            catch (Logic ex)
+            { 
+                
+            }
+            catch (Exception ex)
+            {
+
+                Console.WriteLine($"Se caputuro la exception custom: '{ex.Message}'");
+                Console.WriteLine(ex.ToString());
+            }
             
             Console.ReadKey();  
         }

@@ -6,28 +6,30 @@ using System.Threading.Tasks;
 
 namespace lanNetPractica2
 {
-    public class ExceptionsClass
+    public class ExceptionsClass:Exception
     {
         public static void Dividir(int valor)
         {
+            string mensaje="";
+
             try
             {
                 int resultado;
                 Console.WriteLine($"\n {valor} / 0 = ");
                 resultado = valor / 0;
 
-                //Console.WriteLine($"\n {valor} / 0 = {resultado}");
+                mensaje="La operacion fue exitosa";
             }
 
             catch (Exception ex)
             {
                 Console.WriteLine("\n " + ex.Message);
-                //throw ex.Message;
+                mensaje = "La operacion no fue exitosa";
             }
 
             finally
             {
-                Console.WriteLine("\n Finalizo la operación");
+                Console.WriteLine($"\n Finalizo:  {mensaje} ");
             }
 
         }
@@ -37,8 +39,7 @@ namespace lanNetPractica2
             try
             {
                 Decimal resultado;
-                //divisor = 0;
-                //resultado = 15 / divisor;
+              
                 resultado = dividendo / divisor;
                 Console.WriteLine($"\n {dividendo} / {divisor} = {resultado}");
             }
@@ -52,6 +53,7 @@ namespace lanNetPractica2
                 //Console.WriteLine(Environment.NewLine);
                 Console.WriteLine($"Stack {ex.StackTrace}");
             }
+            #region MyRegion
             //catch (FormatException ex)
             //{
             //    Console.WriteLine($"\n “¡Seguro Ingreso una letra o no ingreso nada!”. \n {ex.Message}");
@@ -62,11 +64,18 @@ namespace lanNetPractica2
             //    //excepcion propia
             //    Console.WriteLine("\n " + ex.Message);               
             //}
+            #endregion
+
             finally
             {
                 Console.WriteLine("\n Finalizo la operación");
             }
 
+        }
+
+        public static void ThrowCustomExeption()
+        {
+            throw new Exception();
         }
     }
 

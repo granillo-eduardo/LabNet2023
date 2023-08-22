@@ -77,5 +77,11 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Ejercicio 1.csproj">
+      <Project>{fcde8f75-f3e9-40b5-9a78-65a8f2039765}</Project>
+      <Name>Ejercicio 1</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -8,9 +8,9 @@ namespace Ejercicio_3
 {
     public class Logic: Exception
     {
-        public Logic() :base("Mensaje de Error personalizada")
+        public Logic() :base("Mensaje de Error de la exceptions personalizada")
         { 
-        
+            
         }
     }
 }
