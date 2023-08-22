@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace Ejercicio_3
 {
-    internal class Logic
+    public class Logic: Exception
     {
+        public Logic() :base("Mensaje de Error personalizada")
+        { 
+        
+        }
     }
 }

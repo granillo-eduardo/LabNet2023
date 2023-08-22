@@ -1,40 +1,45 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Data.Common;
-using System.Globalization;
 using System.Linq;
-using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 
-
-
-namespace Ejercicio_2
+namespace lanNetPractica2
 {
-    internal class Program
+    public class ExceptionsClass
     {
-        static void Main(string[] args)
-        {
-            string dividendo;
-            string divisor;
-
-            Console.Write(" Ingrese un valor para el dividendo : ");
-            dividendo = Console.ReadLine();
-
-            Console.Write(" Ingrese un valor para el divisor : ");
-            divisor = Console.ReadLine();
-
-            Dividir(dividendo, divisor);
-
-            Console.ReadKey();
-        }
-        public static void Dividir(string dividendo, string divisor)
+        public static void Dividir(int valor)
         {
             try
             {
-                Double resultado;
+                int resultado;
+                Console.WriteLine($"\n {valor} / 0 = ");
+                resultado = valor / 0;
 
-                resultado = Convert.ToDouble(dividendo) / Convert.ToDouble(divisor);
+                //Console.WriteLine($"\n {valor} / 0 = {resultado}");
+            }
+
+            catch (Exception ex)
+            {
+                Console.WriteLine("\n " + ex.Message);
+                //throw ex.Message;
+            }
+
+            finally
+            {
+                Console.WriteLine("\n Finalizo la operación");
+            }
+
+        }
+
+        public static void Dividir(Decimal dividendo, Decimal divisor)
+        {
+            try
+            {
+                Decimal resultado;
+                //divisor = 0;
+                //resultado = 15 / divisor;
+                resultado = dividendo / divisor;
                 Console.WriteLine($"\n {dividendo} / {divisor} = {resultado}");
             }
             catch (DivideByZeroException)
@@ -63,8 +68,9 @@ namespace Ejercicio_2
             }
 
         }
-
-
-
     }
+
 }
+
+    
+
