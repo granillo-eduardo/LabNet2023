@@ -12,7 +12,7 @@ namespace Lab.Demo.EF.Logic
     {
         List<T> GetAll();
         void Add(T entidad);        
-        void Delete(int id);
+        void Delete(int id,string id_s);
         void Update(T entidad);
         void Menu(string decision);
         

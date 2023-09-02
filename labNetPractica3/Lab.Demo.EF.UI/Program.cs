@@ -23,7 +23,7 @@ namespace Lab.Demo.EF.UI
             string menu = "";
             string decision = "";
 
-            Console.Write("\n            MENU  \n\n     [1] TRANSPORTES \n     [2] CLIENTES \n     [3] FACTURAS \n\n     [0]SALIR\n\n     Indique la opcion deseada y precione 'Enter': ");
+            Console.Write("\n            MENU  \n\n     [1] TRANSPORTES \n     [2] CLIENTES \n\n        [0]SALIR\n\n     Indique la opcion deseada y precione 'Enter': ");
             menu = Console.ReadLine();
             
 
@@ -42,7 +42,7 @@ namespace Lab.Demo.EF.UI
 
                     case "2":
 
-                        Opciones("CUSTOMMER");
+                        Opciones("CLIENTES");
                         decision = Console.ReadLine();
                         customersLogic.Menu(decision);
                         Console.Write("      Indique una opción y presione 'Enter':  ");

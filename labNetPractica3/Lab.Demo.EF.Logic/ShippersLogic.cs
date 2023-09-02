@@ -34,12 +34,14 @@ namespace Lab.Demo.EF.Logic
 
         public void CargarValores()
         {
-            Console.WriteLine("\n           TRANSPORTISTAS   \n");
+            Console.WriteLine("\n           NUEVO TRANSPORTISTA   \n");
 
             Console.Write($"  Ingrese el nombre de la compañía: "); nombre = Console.ReadLine();
             Console.Write($"  Ingrese el prefijo del telefono : "); prefijo = Console.ReadLine();
             Console.Write($"  Ingrese el número de telefono : "); telefono = int.Parse(Console.ReadLine());
-                                   
+
+            #region edicion_numero
+
             int largonumero = (int)Math.Floor(Math.Log10(telefono) + 1);
 
             string numero = Convert.ToString(telefono);
@@ -56,6 +58,7 @@ namespace Lab.Demo.EF.Logic
                     cadena += numero[i];
                 }
             }
+            #endregion
 
             shippers.CompanyName = nombre;
             shippers.Phone = $"({prefijo}) {cadena}";
@@ -69,13 +72,14 @@ namespace Lab.Demo.EF.Logic
         public void ModificarValores(int id)
         {
             Console.WriteLine("\n            MODIFICAR TRANSPORTISTAS   \n");
-
             Console.Write($"  Ingrese el nombre de la compañía: "); nombre = Console.ReadLine();
             Console.Write($"  Ingrese el prefijo del telefono : "); prefijo = Console.ReadLine();
             Console.Write($"  Ingrese el número de telefono : "); telefono = int.Parse(Console.ReadLine());
+            
+            #region EDICION_TELEFONO
 
             int largonumero = (int)Math.Floor(Math.Log10(telefono) + 1);
-
+                       
             string numero = Convert.ToString(telefono);
             cadena = "";
 
@@ -90,6 +94,7 @@ namespace Lab.Demo.EF.Logic
                     cadena += numero[i];
                 }
             }
+            #endregion
 
             shippers.ShipperID = id;
             shippers.CompanyName = nombre;
@@ -99,7 +104,7 @@ namespace Lab.Demo.EF.Logic
 
         }
 
-        public void Delete(int id)
+        public void Delete(int id,string id_s)
         {
             MostraValor(id, "\n Se eliminó el registro : \n");
 
@@ -113,7 +118,7 @@ namespace Lab.Demo.EF.Logic
         {
             foreach (var item in GetAll())
             {
-                Console.WriteLine($"\n {item.ShipperID} - {item.CompanyName} {item.Phone}");
+                Console.WriteLine($"\n Id: {item.ShipperID} - Nombre de la compania: {item.CompanyName} - Telefono: {item.Phone}");
             }
         }
 
@@ -197,7 +202,7 @@ namespace Lab.Demo.EF.Logic
                             id = Convert.ToInt32(Console.ReadLine());
                             var shippersEliminar = context.Shippers.FirstOrDefault(s => s.ShipperID == id);
 
-                            Delete(id);
+                            Delete(id, "");
                             decision = "5";
 
                         }

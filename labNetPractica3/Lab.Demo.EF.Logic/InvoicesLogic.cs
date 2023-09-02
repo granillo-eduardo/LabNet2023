@@ -35,5 +35,10 @@ namespace Lab.Demo.EF.Logic
         {
             throw new NotImplementedException();
         }
+
+        public void Delete(int id, string id_s)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
