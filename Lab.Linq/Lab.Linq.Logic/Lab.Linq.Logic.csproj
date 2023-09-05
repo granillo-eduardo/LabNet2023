@@ -51,11 +51,26 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BaseLogic.cs" />
+    <Compile Include="CUSTOMERS\Ejercicio_7_Dto.cs" />
+    <Compile Include="PRODUCTS\PRODUCT.cs" />
+    <Compile Include="CUSTOMERS\CUSTOMER.cs" />
+    <Compile Include="ILogic.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Lab.Linq.Data\Lab.Linq.Data.csproj">
+      <Project>{984badbe-749b-4357-9c2d-e3358e6092bb}</Project>
+      <Name>Lab.Linq.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Lab.Linq.Entities\Lab.Linq.Entities.csproj">
+      <Project>{f7eff99a-34f6-4721-9fc3-e04ec9d44462}</Project>
+      <Name>Lab.Linq.Entities</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

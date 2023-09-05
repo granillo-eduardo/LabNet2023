@@ -24,6 +24,7 @@ namespace Lab.Linq.Data
         public virtual DbSet<Suppliers> Suppliers { get; set; }
         public virtual DbSet<sysdiagrams> sysdiagrams { get; set; }
         public virtual DbSet<Territories> Territories { get; set; }
+        public object Ejercicio2 { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
