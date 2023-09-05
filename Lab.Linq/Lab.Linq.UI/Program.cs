@@ -24,16 +24,10 @@ namespace Lab.Linq.UI
                           "                                                    [5] EJERCICIO 5\n" +
                           "                                                    [6] EJERCICIO 6\n" +
                           "                                                    [7] EJERCICIO 7\n" +
-                          "                                                    [8] EJERCICIO 8\n" +
-                          "                                                    [9] EJERCICIO 9\n" +
-                          "                                                    [10] EJERCICIO 10\n" +
-                          "                                                    [11] EJERCICIO 11\n" +
-                          "                                                    [12] EJERCICIO 12\n" +
-                          "                                                    [13] EJERCICIO 13\n" +
                           "                                                    [0]SALIR\n\n" +
                           "                                   Indique la opcion deseada y precione 'Enter': ");
             menu = Console.ReadLine();
-
+            
             while (menu!="0") 
             {
                 switch (menu)
@@ -87,22 +81,30 @@ namespace Lab.Linq.UI
                         menu = "14";
                         break;
                     case "14":
-                        
-                        Console.WriteLine("\n                          mostrrar el menu y colocarle un case para este mssg");
+
+                        Console.Write("\n                                                         MENU  \n\n" +
+                          "                                                    [1] EJERCICIO 1 \n" +
+                          "                                                    [2] EJERCICIO 2 \n" +
+                          "                                                    [3] EJERCICIO 3 \n" +
+                          "                                                    [4] EJERCICIO 4 \n" +
+                          "                                                    [5] EJERCICIO 5\n" +
+                          "                                                    [6] EJERCICIO 6\n" +
+                          "                                                    [7] EJERCICIO 7\n" +
+                          "                                                    [0]SALIR\n\n" +
+                          "                                   Indique la opcion deseada y precione 'Enter': ");
                         menu = Console.ReadLine();
-                        Console.ReadKey();
+                        
                         break;
                     default:
-                        
-
-                        Console.Write("                                    Indique el ejercicio valido y presione 'Enter':  ");
-                        menu = Console.ReadLine(); ;
+                        Console.Write("                                  Indique un ejercicio valido y presione 'Enter':  ");
+                        menu = Console.ReadLine(); 
 
                         break;
                 }
-                Console.WriteLine("\n\n\n\n                                        Presione un tecla para finalizar");
-                Console.ReadKey();
+                
             }
+            Console.WriteLine("\n\n\n\n                                        Presione un tecla para finalizar");
+            Console.ReadKey();
         }
     }
 }

@@ -59,5 +59,7 @@ namespace Lab.Linq.Data
         public virtual ICollection<Order_Details> Order_Details { get; set; }
 
         public virtual Shippers Shippers { get; set; }
+
+        
     }
 }

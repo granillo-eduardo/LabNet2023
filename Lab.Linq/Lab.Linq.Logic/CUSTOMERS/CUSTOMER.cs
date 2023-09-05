@@ -75,19 +75,17 @@ namespace Lab.Linq.UI
             var result = from l_c in l_customer
                          join l_o in l_order
                          on l_c.CustomerID equals l_o.CustomerID
-
                          where l_o.OrderDate > fechaOrden
-                         select l_o;
-                         //select (l_o => new Ejercicio_7_Dto
-                         //{
-                         //    Nombre = l_o.Nombre,
-                         //    Region = l_o.Region,
-                         //    Fecha = fechaOrden,
-                         //});
- 
+                         select new Ejercicio_7_Dto
+                         {
+                             Nombre = l_o.Customers.ContactName,
+                             Region = l_o.Customers.Region,
+                             Fecha= (DateTime)l_o.OrderDate,
+                         };
+
             foreach (var item in result)
             {
-                Console.WriteLine($"{item.Customers.CompanyName} - ");
+                Console.WriteLine($"{item.Nombre} - {item.Region} - {item.Fecha}");
             }
 
         }
