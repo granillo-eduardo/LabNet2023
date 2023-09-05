@@ -14,8 +14,7 @@ namespace Lab.Linq.UI
 
             CUSTOMER customer = new CUSTOMER();
             PRODUCT product = new PRODUCT();
-            //Ejercicio3 ejercicio3 = new Ejercicio3();
-
+            
             Console.Write("\n                                                         MENU  \n\n" +
                           "                                                    [1] EJERCICIO 1 \n" +
                           "                                                    [2] EJERCICIO 2 \n" +
