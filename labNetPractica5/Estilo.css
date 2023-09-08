@@ -1,0 +1,118 @@
+.container{
+
+    display: flex;
+    margin: 2% auto;
+    flex-direction: column;
+    width: 25%;
+    border: 5px solid #64392c;
+    padding: 5%;
+    border-radius: 1rem;
+    background: linear-gradient(#9292a3,#190b5ff8)
+}
+
+.container h2{
+    font-family:Arial, Helvetica, sans-serif;
+  margin: 3vh;
+  color: #d9dae7;
+  text-shadow: 0 0 4px black;
+  font-weight: 900;
+  font-size: 160%;
+
+}
+.container h1{
+    margin: 3vh 0;
+    color: #9cd7e9;
+    text-shadow: 0 0 4px black;
+    font-weight: 900;
+    font-size: 320%;
+  
+}
+
+.container button{
+    margin: 3vh 0;
+    border: 3px solid black;
+}
+
+
+#display-puntaje{
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    font-size: 1em;
+    color: rgb(15, 5, 102);
+    pointer-events: none;
+    font-size: 23px;
+    font-weight: 600;
+}
+
+#display-mensaje{
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    font-size: 1em;
+    color: rgb(15, 5, 102);
+    pointer-events: none;
+    font-size: 23px;
+    font-weight: 600;
+}
+
+#display-resultado{
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    font-size: 1em;
+    color: rgb(15, 5, 102);
+    pointer-events: none;
+    font-size: 23px;
+    font-weight: 600;
+}
+
+#display-highscore{
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    font-size: 2em;
+    color: rgb(255, 255, 255);
+    pointer-events: none;
+    font-size: 23px;
+    font-weight: 600;
+}
+
+#btn1{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight:bolder;
+    border-radius: 20px;
+    padding: 10px 20px;
+    background-color: #60a5e6;
+    color: rgb(19, 5, 100);
+    font-size: 23px;
+    cursor: pointer;
+}
+
+#btn2{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight:bolder;
+    border-radius: 20px;
+    padding: 10px 20px;
+    background-color: #60a5e6;
+    color: rgb(19, 5, 100);
+    font-size: 23px;
+    cursor: pointer;
+}
+
+.container input{
+    font-weight: bolder;
+    padding: 0.8rem;
+    border-radius: 1rem;
+    border-radius: 20px;
+    background: none;
+    outline: 0px;
+    color: rgb(235, 151, 55);
+    font-size: 25px;
+    text-align: center;
+}
+
+
+::placeholder{
+    color: rgb(250, 193, 193);
+    font-size: 20px;
+}
+:focus::placeholder {
+    color: transparent;
+}

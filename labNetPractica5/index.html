@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADIVINADOR</title>
+    <link rel="stylesheet" href="Estilo.css">
+</head>
+<body>
+    <div class="container" style="text-align: center;">
+        <h1>    
+            ADIVINA EL NÚMERO
+        </h1>
+  
+  <h2>Adivina un numero entre 1 y 20</h2>
+      
+  <!-- <input id="txt1" type="text"  placeholder="Ingresa un número"> -->
+  <input id="txt1" type="number" placeholder="Ingrese su numero aquí...">
+  <br>
+  <br>
+
+  <label id="display-puntaje"></label>
+  
+  <br>
+  
+  
+  <br>
+  <div id="display-mensaje">  </div>
+  
+  <br>
+  <div id="display-resultado"> </div>
+  
+  <br>
+  <button id="btn1" onclick="playGame()"> "PROBAR" </button>
+  <button id="btn2" onclick="resetGame()"> "NUEVO" </button>
+  
+  <br>
+  <br>
+  
+  <div id="display-highscore"> </div><br>
+  <!--<input id="txt2" type="text" disabled placeholder="Ingresa su nombre">-->
+
+
+  <script src="main.js" type="text/javascript">
+      
+      Window.addEventListener("Keydown",(e)=>
+      {
+          if(e.KeyCode===13) 
+          {
+              playGame();
+          }
+
+      })
+  </script>
+    </div>
+</body>
+</html>
