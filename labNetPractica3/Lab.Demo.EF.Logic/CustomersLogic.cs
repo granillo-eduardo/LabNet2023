@@ -102,7 +102,7 @@ namespace Lab.Demo.EF.Logic
                         Console.WriteLine("\n   Presione una tecla para continuar... ");
                         Console.ReadKey();
                         //Console.Clear();
-                        Console.Write($"\n\n            CLIENTES  \n\n     [1] MOSTRAR VALORES  \n     [2] INGRESAR   \n     [3] MODIFICAR  \n     [4] ELIMINAR     \n\n     [0]SALIR\n\n");
+                        Console.Write($"\n\n            CLIENTES  \n\n     [1] MOSTRAR VALORES  \n     [2] INGRESAR   \n     [3] MODIFICAR  \n     [4] ELIMINAR     \n\n     [0] SALIR\n\n");
                         Console.Write("      Indique una opción y presione 'Enter':  ");
                         decision = Console.ReadLine();
 

@@ -45,8 +45,9 @@ namespace Lab.Demo.EF.UI
                         Opciones("CLIENTES");
                         decision = Console.ReadLine();
                         customersLogic.Menu(decision);
-                        Console.Write("      Indique una opción y presione 'Enter':  ");
-                        menu = Console.ReadLine();
+                        menu = "4";
+                        //Console.Write("      Indique una opción y presione 'Enter':  ");
+                        //menu = Console.ReadLine();
 
                         break;
 
@@ -65,7 +66,7 @@ namespace Lab.Demo.EF.UI
                         Console.Write("\n Precione una tecla para continuar... ");
                         Console.ReadKey();
                         Console.Clear();
-                        Console.Write("\n            MENU  \n\n     [1] TRANSPORTES \n     [2] CLIENTES \n     [3] FACTURAS \n\n     [0]SALIR\n\n     Indique la opcion deseada y precione 'Enter': ");
+                        Console.Write("\n            MENU  \n\n     [1] TRANSPORTES \n     [2] CLIENTES \n\n     [0]SALIR\n\n     Indique la opcion deseada y precione 'Enter': ");
                         menu = Console.ReadLine();
                         break;
 
